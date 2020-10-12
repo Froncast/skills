@@ -1,0 +1,72 @@
+@import url(normalize.css);
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body{
+	background-color: #e5ebf2;
+	font-family: 'Montserrat', sans-serif;
+}
+.table-wrap{
+	width: 1300px;
+	margin: 1rem auto;
+	height: 100vh;
+}
+.filters-wrap{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	select, input{
+		border: 1px solid #dbdbdb;
+		border-radius: 5px;
+		margin-right: 15px;
+		padding-left: 15px;
+		height: 30px;
+	}
+}
+table{
+	margin: 30px 0px;
+	border-spacing: 0;
+	font-size: 13px;
+	background-color: #fff;
+
+	th{
+		background-color: #4683de;
+		color: #fff;
+		height: 50px;
+		text-align: center;
+		padding: 0px 15px;
+	}
+
+	td{
+		padding-left: 25px;
+		height: 50px;
+		line-height: 50px;
+	}
+
+	tr:nth-child(2n){
+		background-color: #fafafa;
+	}
+
+	.fullname{
+		width: 400px;
+	}
+
+	.list_of_skills{
+		width: 300px;
+	}
+
+	.ver_m{
+		width: 400px;
+	}
+
+	.test_result{
+		width: 200px;
+	}
+
+	select{
+		border: 1px solid #dbdbdb;
+		border-radius: 5px;
+		padding: 5px 5px;
+		width: 230px;
+	}
+}

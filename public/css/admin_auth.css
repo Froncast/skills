@@ -1,0 +1,51 @@
+@import url(normalize.css);
+body{
+	background: #F3F3F5 url(../img/admin_auth.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+form{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -175px;
+	background: rgba(0, 0, 0, 0.3);
+	width: 300px;
+	height: 350px;
+	border-radius: 5px;
+}
+form img{
+	width: 180px;
+	display: block;
+	margin: 35px auto;
+}
+form .form-group{
+	margin-top: 30px;
+}
+form input{
+	background: none;
+	border: none;
+	border-bottom: 1px solid rgba(255,255,255, 0.7);
+	display: block;
+	width: 85%;
+	margin: 0 auto;
+	padding: 5px 2px;
+	color: #fff;
+}
+input::-webkit-input-placeholder {color:#fff; opacity:1;}/* webkit */
+input::-moz-placeholder          {color:#fff; opacity:1;}/* Firefox 19+ */
+input:-moz-placeholder           {color:#fff; opacity:1;}/* Firefox 18- */
+input:-ms-input-placeholder      {color:#fff; opacity:1;}/* IE */
+
+form button{
+	/*background: rgba(109, 154, 253, 1);*/
+	background: #ff4f12;
+	border: none;
+	width: 50%;
+	height: 30px;
+	display: block;
+	margin: 30px auto;
+	border-radius: 30px;
+	color: rgb(255,255,255);
+	text-transform: uppercase;
+}

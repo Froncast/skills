@@ -1,0 +1,135 @@
+@import url(normalize.css);
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+$admin-header-height: 70px;
+$admin-footer-height: 30px;
+$admin-nav-width: 235px;
+$color-primary: #007bff;
+$color-secondary: #6c757d;
+$color-success: #28a745;
+$color-danger: #dc3545;
+$color-warning: #ffc107;
+$color-info: #17a2b8;
+$color-light: #f8f9fa;
+$color-dark: #343a40;
+$color-white: #ffffff;
+
+
+section{
+	width: 80%;
+	margin: 2rem auto;
+
+	span.section_title{
+		border-bottom: 1px solid #d0d1d4;
+		display: block;
+		width: 100%;
+		padding-bottom: 10px;
+	}
+}
+a{
+	color: #dc5a60;
+	text-decoration: none;
+}
+table{
+	width: 100%;
+	margin: 2rem 0;
+	color: #212529;
+	border-collapse: collapse;
+	border-right: 1px solid #e5e6e6;
+	border-left: 1px solid #e5e6e6;
+	border-bottom: 1px solid #e5e6e6;
+
+	thead{
+		background: $color-dark;
+		color: $color-white;
+
+		tr th{
+			padding: .5rem 1rem;
+			border-right: 1px solid #e5e6e6;
+
+			&:last-child{
+				border-right: none;
+			}
+		}
+	}
+
+	tbody tr{
+		background: $color-white;
+		font-size: 0.90em;
+
+		&:nth-child(2n){
+		background: $color-light;
+		transition: background 0.5s, color 0.5s;
+		}
+
+		td{
+			padding: 0.8rem 0px 0.8rem 1rem;
+			border-right: 1px solid #e5e6e6;
+
+			&:last-child{
+				border-right: none;
+			}
+
+			select{
+				width: 80%;
+				display: block;
+				margin: 0 auto;
+				font-size: 0.90em;
+			}
+		}
+	}
+
+	tbody tr:hover{
+		background-color: #e5e6e6;
+		cursor: pointer;
+	}
+}
+select{
+	border: 1px solid #DCDCE9;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 0.2rem;
+	font-size: 0.75em;
+	line-height: 14px;
+}
+.pagination{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+
+	li{
+		background-color: white;
+
+		a, span{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			font-weight: 300;
+			padding-top: 1px;
+			border: 1px solid rgba(0,0,0, .15);
+			border-left-width: 0;
+			min-width: 44px;
+			min-height: 44px;
+			color: #b5b5bd;
+			box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,.35);
+		}
+
+		&:first-of-type a,
+		&:first-of-type span{
+			border: 1px solid rgba(0,0,0, .15);
+			border-left-width: 1;
+		}
+
+		&.active span, a:hover{
+			color: #dc4e00;
+		}
+
+		&.active span{
+			cursor: default;
+			box-shadow: inset 0px 2px 1px 0px rgba(220, 78, 0, 1);
+			pointer-events: none;
+		}
+	}
+}
